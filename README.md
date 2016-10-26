@@ -8,8 +8,7 @@ See [silo-server](https://github.com/farazfazli/silo-server/) for server impleme
 
   ```xml
         <service
-            android:name="com.farazfazli.blaise.BlaiseService"
-            android:exported="false" />
+            android:name="com.farazfazli.blaise.BlaiseService" />
 
         <service
             android:name="com.farazfazli.silo.SiloService" />
@@ -29,17 +28,16 @@ See [silo-server](https://github.com/farazfazli/silo-server/) for server impleme
   ```
   
 
-3. Bind reflected fragments using the "getFragments" helper method
+3. Bind reflected fragments using the "getFragments" helper method.
   ```
     public void bindFragments() {
         HashMap<String, Fragment> fragments = getFragments(new String[]{"SettingsFragment"});
         mSettingsFragment = fragments.get("SettingsFragment");
-        Log.i(TAG, "Binding Settings Fragment");
-        binding.settings.setOnClickListener(view -> selectFragment(mSettingsFragment));
+        // You can now use mSettingsFragment however you want
     }
   ```
 
-4. Load necessary Silo modules
+4. Load necessary Silo modules.
   ```
     // Load each module in modules array, start Blaise to check for updates
     private void loadSiloModules() {
@@ -47,12 +45,12 @@ See [silo-server](https://github.com/farazfazli/silo-server/) for server impleme
         Intent silo = SiloService.getIntent(this, modulesArray);
         blaise = BlaiseService.getIntent(this, true);
         startService(silo);
-        registerUpdate();
+        registerUpdate(); // Register receiver here if you want updates to be posted to UI (optional)
         startService(blaise);
     }
   ```
 
-5. Add local broadcast receiver, and override onStop & onDestroy
+5. Add local broadcast receiver, and override onStop & onDestroy. (optional)
   ```
     private void registerUpdate() {
         Log.i(TAG, "Receiver being registered");
