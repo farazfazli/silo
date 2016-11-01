@@ -97,15 +97,18 @@ Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple tool to
 # Create Plugin App
 
 1. Include the Blaise Plugin module
+
   ```
   compile project(path: ':blaise-plugin')
   ```
 
 2. Extend PluginFragment
+
   ```
   public class SettingsFragment extends PluginFragment
   ```
 3. Replace inflater to allow for reflected fragments to be loaded
+
   ```
       public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
