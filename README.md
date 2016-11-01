@@ -3,6 +3,13 @@ Realtime modular applications on Android: auto-updating, analytics, and more. I 
 
 See [silo-server](https://github.com/farazfazli/silo-server/) for server implementation written in Go.
 
+# Download
+
+Download the *.aar bundle [here](https://my.mixtape.moe/tfioph.zip).
+
+Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple way to transport Android Libraries.
+
+
 # Getting Started
 1. Add the Silo services (base, upstream, and downstream) and any modules you'd like to your Manifest (such as Blaise).
 
