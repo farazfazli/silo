@@ -118,7 +118,7 @@ Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple tool to
 
 # Hosting
 
-1. Make an account at silo.live/ or host your own instance, fill the appropriate fields
+1. Make an account at [silo.live/](https://silo.live/) or host your own instance, fill the appropriate fields
 
 2. Update through the site, all clients will autoupdate.
   
