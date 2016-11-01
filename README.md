@@ -7,7 +7,7 @@ See [silo-server](https://github.com/farazfazli/silo-server/) for server impleme
 
 Download the *.aar bundle [here](https://my.mixtape.moe/tfioph.zip).
 
-Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple way to transport Android Libraries.
+Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple tool to transport Android Libraries.
 
 
 # Getting Started
