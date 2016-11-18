@@ -1,5 +1,5 @@
 # Silo
-Realtime modular applications on Android: auto-updating, analytics, and more. I made the server and client side integration in 6 days, so it's currently beta work.
+Realtime modular applications on Android: auto-updating, analytics, and more.
 
 See [silo-server](https://github.com/farazfazli/silo-server/) for server implementation written in Go.
 
@@ -125,6 +125,10 @@ Bundled with [aarpack](https://github.com/farazfazli/aarpack/), a simple tool to
 # Motivations for Blaise auto-updating
 
 I was motivated by low adoption of user updates and as a developer, I want each and every one of my app users to have the latest app code.
+
+# Todo
+
+Analytics, audience segmentation, A/B testing. I am thinking to do this in R.
 
 # Bugs/Suggestions
 
